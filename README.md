@@ -2,7 +2,7 @@
 
 [![React](https://img.shields.io/badge/React-18.0.0-blue.svg)](https://reactjs.org/) [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.0-green.svg)](https://tailwindcss.com/) [![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black.svg)](https://vercel.com/) [![JSON API](https://img.shields.io/badge/Data%20Source-Local%20JSON-yellow.svg)]()
 
-This project is inspired by a Reddit post by u/Lunner, showcasing a concept for the Nintendo Switch 2 interface. It is built using React and styled with Tailwind CSS. Initially, it leveraged the [NSG Reviews API](https://www.nsgreviews.com/) for fetching game data, but the data was later migrated to a local JSON file for better performance, and game cover images were downloaded.
+This project is inspired by a Reddit post by u/Triforce_Hunter_1, showcasing a concept for the Nintendo Switch 2 interface. It is built using React and styled with Tailwind CSS. Initially, it leveraged the [NSG Reviews API](https://www.nsgreviews.com/) for fetching game data, but the data was later migrated to a local JSON file for better performance, and game cover images were downloaded.
 
 The interface aims to replicate and expand upon the sleek design of the Nintendo Switch, offering a visually appealing and interactive user experience.
 
@@ -17,7 +17,7 @@ The interface aims to replicate and expand upon the sleek design of the Nintendo
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/brunofraniscu/switch2.git
+   git clone https://github.com/brunofranciscojs/nintendo-switch-2-react-ui.git 
    cd nintendo-switch-2-interface
    ```
 
@@ -46,7 +46,7 @@ The project is deployed on Vercel for easy access. [View the live demo here](htt
 - **Local JSON File** for game data and assets.
 
 ## Acknowledgments
-- Concept design inspired by Reddit user [u/Lunner](https://www.reddit.com/user/Lunner).
+- Concept design inspired by Reddit user [u/Lunner](https://www.reddit.com/user/Triforce_Hunter_1).
 - Initial data sourced from the [NSG Reviews API](https://www.nsgreviews.com/).
 
 ---
@@ -70,7 +70,7 @@ A interface busca replicar e expandir o design elegante do Nintendo Switch, ofer
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/brunofraniscu/switch2.git
+   git clone https://github.com/brunofranciscojs/nintendo-switch-2-react-ui.git
    cd nintendo-switch-2-interface
    ```
 
@@ -99,6 +99,6 @@ O projeto está hospedado no Vercel para acesso fácil. [Veja o demo aqui](https
 - **Arquivo JSON Local** para dados e assets.
 
 ## Agradecimentos
-- Design conceitual inspirado pelo usuário do Reddit [u/Lunner](https://www.reddit.com/user/Lunner).
+- Design conceitual inspirado pelo usuário do Reddit [u/Lunner](https://www.reddit.com/user/Triforce_Hunter_1).
 - Dados iniciais obtidos da [API do NSG Reviews](https://www.nsgreviews.com/).
 
