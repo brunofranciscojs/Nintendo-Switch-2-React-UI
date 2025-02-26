@@ -15,7 +15,8 @@ const wifiIcon = `<svg width="32px" height="32px" viewBox="0 -2 14 14"> <g id="P
 
 export default function Header ({ globalNumber }){
     const [hora, setHora] = useState('')
-
+ 	const [gameName, setGameName] = useState(localStorage.getItem('activeGame') || 'Nenhum jogo ativo');
+    
     useEffect(() => {
         const atualizarHora = () => {
           const data = new Date();
@@ -32,7 +33,26 @@ export default function Header ({ globalNumber }){
     
         return () => clearInterval(intervalo);
       }, []);
- 
+
+
+    useEffect(() =>{
+        if(localStorage.getItem('activeGame')){
+            setGameName(localStorage.getItem('activeGame'))
+        }
+    },[])
+    
+    useEffect(() => {
+        const interval = setInterval(() => {
+            const storedGame = localStorage.getItem('activeGame');
+            if (storedGame !== gameName) {
+                setGameName(storedGame || '');
+            }
+        }, 100); 
+    
+        return () => clearInterval(interval);
+    }, [gameName]);
+    
+    
     return (
         <nav className=' flex absolute w-full sm:justify-between justify-center items-center px-4 sm:px-20 cl:py-16 py-7 z-50 flex-wrap cl:gap-12 gap-7 [zoom:.7] cl:[zoom:1]'>
 
@@ -49,7 +69,11 @@ export default function Header ({ globalNumber }){
                     {icons.map((iconObj) =>
                         Object.entries(iconObj).map(([name, svg],index) => (
                             <li key={name} className='hover:-translate-y-2 duration-200 relative nth-1:after:content-["ONLINE"] nth-1:after:absolute nth-1:after:-bottom-3 nth-1:after:text-[.6rem] nth-1:after:left-0 nth-1:after:text-white'>
-                                <button tabIndex={-1} dangerouslySetInnerHTML={{ __html: svg }}></button>
+                                <button data-hover={index === 1 && 'Now playing: Lorem ipsum dolor('+gameName+')' } 
+                                    tabIndex={-1} dangerouslySetInnerHTML={{ __html: svg }}
+                                    className="relative after:content-[attr(data-hover)] after:absolute after:bottom-5 after:duration-200 after:left-1/2 after:-translate-x-1/2 after:text-white after:text-sm after:opacity-0 hover:after:bottom-0 hover:after:opacity-100"
+                                    ></button>
+                                
                             </li>
                         ))
                     )}
