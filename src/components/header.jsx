@@ -71,7 +71,9 @@ export default function Header ({ globalNumber }){
                             <li key={name} className='hover:-translate-y-2 duration-200 relative nth-1:after:content-["ONLINE"] nth-1:after:absolute nth-1:after:-bottom-3 nth-1:after:text-[.6rem] nth-1:after:left-0 nth-1:after:text-white'>
                                 <button data-hover={index === 1 && 'Now playing: Lorem ipsum dolor('+gameName+')' } 
                                     tabIndex={-1} dangerouslySetInnerHTML={{ __html: svg }}
-                                    className="relative after:content-[attr(data-hover)] after:absolute after:bottom-5 after:duration-200 after:left-1/2 after:-translate-x-1/2 after:text-white after:text-sm after:opacity-0 hover:after:bottom-0 hover:after:opacity-100"
+                                    className="relative after:content-[attr(data-hover)] after:absolute after:bottom-1 
+                                    after:duration-200 after:left-1/2 after:-translate-x-1/2 after:text-white after:text-sm 
+                                    after:opacity-0 hover:after:-bottom-3 hover:after:opacity-100 after:w-[900px]"
                                     ></button>
                                 
                             </li>
