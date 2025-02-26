@@ -73,7 +73,7 @@ export default function Header ({ globalNumber }){
                                     tabIndex={-1} dangerouslySetInnerHTML={{ __html: svg }}
                                     className="relative after:content-[attr(data-hover)] after:absolute after:bottom-1 
                                     after:duration-200 after:left-1/2 after:-translate-x-1/2 after:text-white after:text-sm 
-                                    after:opacity-0 hover:after:-bottom-3 hover:after:opacity-100 after:w-[900px]"
+                                    after:opacity-0 hover:after:-bottom-7 hover:after:opacity-100 after:w-[900px]"
                                     ></button>
                                 
                             </li>
